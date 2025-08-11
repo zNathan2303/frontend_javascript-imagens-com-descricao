@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-block: 8px;
+    background-color: black;
+}
+
+.galeria {
+    display: colums;
+    columns: 3;
+    color: white;
+}
+
+.galeria .imagem {
+    width: 100%;
+    margin-block: 8px;
+    text-align: center;
+    background-color: grey;
+}
+
+.imagem span {
+    min-width: 100%;
+}
+
+.galeria img {
+    width: 100%;
+}
