@@ -27,7 +27,7 @@ const imagens = [
     },
     {
         nome: 'skyline r33',
-        url: './img/skyline_r33.jpg'
+        url: './img/skyline_r33.avif'
     },
     {
         nome: 'skyline r34',
@@ -44,10 +44,12 @@ function criarImagem(srcImagem) {
     const imagem = document.createElement('img')
     imagem.src = srcImagem.url
     const descricao = document.createElement('span')
-    descricao.textContent(srcImagem.nome)
+    descricao.textContent = srcImagem.nome
 
-    galeria.appendChild(div)
     div.appendChild(imagem)
+    div.appendChild(descricao)
+    galeria.appendChild(div)
+    
 }
 
 function carregarImagens() {
